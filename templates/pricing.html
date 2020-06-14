@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Pricing{% endblock %}
+{% block content %}
+
+        <!-- PRICING -->
+        <section id="pricing">
+            <div class="title">ご利用料金</div>
+            <div class="options d-flex flex-row justify-content-center">
+                <div class="switch d-flex flex-row align-items-center">
+                    <div class="switch_option">月払い</div>
+                    <div id="switch_container">
+                        <div class="switch_circle"></div>
+                    </div>
+                    <div class="switch_option">年払い</div>
+                </div>
+                <div class="plan_label">プラン</div>
+                <div class="option_box d-flex flex-column">
+                    <div class="option_name">スタートアップ</div>
+                    <div class="option_body">
+                        <div class="price">8,000円/月</div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="info_label">アプリ数</div>
+                            <div class="info">4</div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="info_label">同期回数</div>
+                            <div class="info">1時間ごと</div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="info_label">データ量</div>
+                            <div class="info">100MB</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option_box d-flex flex-column">
+                    <div class="option_name">プロフェッショナル</div>
+                    <div class="option_body">
+                        <div class="price">24,000円/月</div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="info_label">アプリ数</div>
+                            <div class="info">25</div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="info_label">同期回数</div>
+                            <div class="info">15分ごと</div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="info_label">データ量</div>
+                            <div class="info">1000MB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- !PRICING -->
+{% endblock %}
+{% block js %}<script src="{% static 'js/pricing.js' %}" charset="utf-8"></script> {% endblock %}

@@ -1,0 +1,349 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+}
+
+html {
+  height: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Roboto;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  height: 5vmax;
+}
+
+header .navbar {
+  background-color: #F9F9F9;
+  height: 5vmax;
+  width: 100%;
+}
+
+header .navbar .navbar-brand img {
+  height: 5vmax;
+}
+
+header .navbar .navbar-nav {
+  padding: 0 4rem;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link {
+  padding: 0 1vmax;
+  height: 2.5vmax;
+  color: #000;
+  font-size: 1.5vmax;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #FF7000;
+  font-weight: bold;
+  -webkit-transition: ease-in .2s;
+  transition: ease-in .2s;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link.orange {
+  background-color: #FF7000;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link.orange:hover {
+  color: #fff;
+  font-weight: bold;
+}
+
+main {
+  min-height: calc(100vh - 5vmax - 5vmax);
+}
+
+.cover {
+  width: 100%;
+}
+
+#upper {
+  padding-bottom: 5vmax;
+}
+
+#upper .upper_items {
+  padding: 0 5vmax;
+}
+
+#upper .upper_items img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 32.5vmax;
+}
+
+#upper .upper_items .item_info {
+  padding-left: 2vmax;
+}
+
+#upper .upper_items .item_info .item_title {
+  font-size: 2.5vmax;
+  padding: 5vmax 0 2vmax;
+}
+
+#upper .upper_items .item_info .item_description {
+  font-size: 1.5vmax;
+}
+
+.divider {
+  background-color: #666666;
+  color: #fff;
+  padding: 2vmax 0;
+}
+
+.divider .divider_title {
+  font-size: 3vmax;
+}
+
+.divider .divider_description {
+  font-size: 1.75vmax;
+}
+
+#lower .img_container {
+  padding: 5.75vmax;
+}
+
+#lower .lower_container {
+  background-color: #F9F9F9;
+  padding: 0 8vmax;
+}
+
+#lower .lower_container img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 32.5vmax;
+}
+
+#lower .lower_container .lower_message {
+  padding-left: 3vmax;
+}
+
+#lower .lower_container .lower_message p {
+  font-size: 1.5vmax;
+  padding: .8vmax 0;
+}
+
+#lower .lower_container .lower_message p.number {
+  font-size: 2.25vmax;
+}
+
+#lower .button {
+  background-color: #666666;
+  color: #fff;
+  font-size: 2.25vmax;
+  padding: 1vmax 1.5vmax;
+  margin: 3vmax 0;
+}
+
+#lower .button:hover {
+  text-decoration: none;
+  background-color: #FF7000;
+  -webkit-transition: ease-in .2s;
+  transition: ease-in .2s;
+}
+
+#lower .message_title {
+  font-size: 2.25vmax;
+  padding-bottom: 1.5vmax;
+}
+
+#lower .message_description {
+  font-size: 1.5vmax;
+  padding-bottom: 4.5vmax;
+}
+
+footer {
+  background-color: #666666;
+  height: 5vmax;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .link {
+  color: #fff;
+  font-size: 1.5vmax;
+  padding: 0 1.5vmax;
+}
+
+footer .link:hover {
+  color: #FF7000;
+  font-weight: bold;
+  -webkit-transition: ease-in .2s;
+  transition: ease-in .2s;
+}
+
+#about_us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7vmax 17vmax;
+}
+
+#about_us .title {
+  font-size: 3vmax;
+}
+
+#about_us .info_box {
+  width: 100%;
+  border: 0.15vmax solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2.5vmax 0;
+  padding: 4vmax 3vmax;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  -webkit-box-shadow: 0 0.25vmax 0.25vmax rgba(102, 102, 102, 0.5);
+          box-shadow: 0 0.25vmax 0.25vmax rgba(102, 102, 102, 0.5);
+}
+
+#about_us .info_box .grey {
+  width: .8vmax;
+  background-color: #E5E5E5;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0;
+}
+
+#about_us .info_box .side {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#about_us .info_box .side .item {
+  font-size: 1.5vmax;
+  margin-bottom: 1.5vmax;
+}
+
+#pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7vmax 17vmax;
+}
+
+#pricing .title {
+  font-size: 3vmax;
+  margin-bottom: 5vmax;
+}
+
+#pricing .options {
+  position: relative;
+}
+
+#pricing .options .switch {
+  position: absolute;
+  top: -4vmax;
+  right: 2vmax;
+}
+
+#pricing .options .switch .switch_option {
+  font-size: 1.25vmax;
+}
+
+#pricing .options .switch #switch_container {
+  height: 3vmax;
+  width: 5.5vmax;
+  margin: 0 .5vmax;
+  border: 0.55vmax solid #666666;
+  border-radius: 2vmax;
+  position: relative;
+}
+
+#pricing .options .switch #switch_container:hover {
+  cursor: pointer;
+}
+
+#pricing .options .switch #switch_container .switch_circle {
+  position: absolute;
+  background-color: #666666;
+  height: 1.5vmax;
+  width: 1.5vmax;
+  top: 50%;
+  left: .25vmax;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+#pricing .options .plan_label {
+  position: absolute;
+  left: -7vmax;
+  top: 3vmax;
+  font-size: 1.5vmax;
+}
+
+#pricing .options .option_box {
+  margin: 1vmax;
+  width: 25vmax;
+}
+
+#pricing .options .option_box .option_name {
+  padding: 1vmax;
+  background-color: #FF7000;
+  color: #fff;
+  font-size: 2.25vmax;
+  text-align: center;
+}
+
+#pricing .options .option_box .price {
+  width: 100%;
+  text-align: center;
+  font-size: 2.25vmax;
+  padding: 1vmax 0 2.5vmax;
+}
+
+#pricing .options .option_box .option_body {
+  border: 0.1vmax solid #000;
+  padding: 1vmax;
+  height: 29vmax;
+}
+
+#pricing .options .option_box .option_body .info_label,
+#pricing .options .option_box .option_body .info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1.5vmax;
+  padding: 0 2vmax 3vmax;
+}
+
+#pricing .options .option_box .option_body .info_label {
+  text-align: right;
+}
+/*# sourceMappingURL=styles.css.map */

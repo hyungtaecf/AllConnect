@@ -1,0 +1,286 @@
+$lightgrey:#F9F9F9;
+$darkgrey:#666666;
+$accent:#FF7000;
+$black:#000;
+$white:#fff;
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: normal;
+}
+
+html {
+    height: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Roboto;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+header {
+    height: 5vmax;
+    .navbar {
+        background-color: $lightgrey;
+        height: 5vmax;
+        width: 100%;
+        .navbar-brand {
+            img {
+                height: 5vmax;
+            }
+        }
+        .navbar-nav {
+            padding: 0 4rem;
+            .nav-item {
+                .nav-link {
+                    padding: 0 1vmax;
+                    height: 2.5vmax;
+                    color: $black;
+                    font-size: 1.5vmax;
+                    &:hover {
+                        color: $accent;
+                        font-weight: bold;
+                        transition: ease-in .2s;
+                    }
+                    &.orange {
+                        background-color: $accent;
+                        &:hover {
+                            color: $white;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    min-height: calc(100vh - 5vmax - 5vmax);
+}
+
+.cover {
+    width: 100%;
+}
+
+#upper {
+    padding-bottom: 5vmax;
+    .upper_items {
+        padding: 0 5vmax;
+        img {
+            flex-shrink: 0;
+            width: 32.5vmax;
+        }
+        .item_info {
+            padding-left: 2vmax;
+            .item_title {
+                font-size: 2.5vmax;
+                padding: 5vmax 0 2vmax;
+            }
+            .item_description {
+                font-size: 1.5vmax;
+            }
+        }
+    }
+}
+
+.divider {
+    background-color: $darkgrey;
+    color: $white;
+    padding: 2vmax 0;
+    .divider_title {
+        font-size: 3vmax;
+    }
+    .divider_description {
+        font-size: 1.75vmax;
+    }
+}
+
+#lower {
+    .img_container {
+        padding: 5.75vmax;
+    }
+    .lower_container {
+        background-color: $lightgrey;
+        padding: 0 8vmax;
+        img {
+            flex-shrink: 0;
+            width: 32.5vmax;
+        }
+        .lower_message {
+            padding-left: 3vmax;
+            p {
+                font-size: 1.5vmax;
+                padding: .8vmax 0;
+                &.number {
+                    font-size: 2.25vmax;
+                }
+            }
+        }
+    }
+    .button {
+        background-color: $darkgrey;
+        color: $white;
+        font-size: 2.25vmax;
+        padding: 1vmax 1.5vmax;
+        margin: 3vmax 0;
+        &:hover {
+            text-decoration: none;
+            background-color: $accent;
+            transition: ease-in .2s;
+        }
+    }
+    .message_title {
+        font-size: 2.25vmax;
+        padding-bottom: 1.5vmax;
+    }
+    .message_description {
+        font-size: 1.5vmax;
+        padding-bottom: 4.5vmax;
+    }
+}
+
+footer {
+    background-color: $darkgrey;
+    height: 5vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .link {
+        color: $white;
+        font-size: 1.5vmax;
+        padding: 0 1.5vmax;
+        &:hover {
+            color: $accent;
+            font-weight: bold;
+            transition: ease-in .2s;
+        }
+    }
+}
+
+// ABOUT US
+#about_us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7vmax 17vmax;
+    .title {
+        font-size: 3vmax;
+    }
+    .info_box {
+        width: 100%;
+        border: .15vmax solid $black;
+        display: flex;
+        margin: 2.5vmax 0;
+        padding: 4vmax 3vmax;
+        flex-direction: row;
+        position: relative;
+        box-shadow: 0 .25vmax .25vmax rgba($darkgrey, 0.5);
+        .grey {
+            width: .8vmax;
+            background-color: #E5E5E5;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            left: 0;
+        }
+        .side {
+            flex: 1;
+            .item {
+                font-size: 1.5vmax;
+                margin-bottom: 1.5vmax;
+            }
+        }
+    }
+}
+
+// !ABOUT US
+// PRICING
+#pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7vmax 17vmax;
+    .title {
+        font-size: 3vmax;
+        margin-bottom: 5vmax;
+    }
+    .options {
+        position: relative;
+        .switch {
+            position: absolute;
+            top: -4vmax;
+            right: 2vmax;
+            .switch_option {
+                font-size: 1.25vmax;
+            }
+            #switch_container {
+                height: 3vmax;
+                width: 5.5vmax;
+                margin: 0 .5vmax;
+                border: .55vmax solid $darkgrey;
+                border-radius: 2vmax;
+                position: relative;
+                &:hover {
+                    cursor: pointer;
+                }
+                .switch_circle {
+                    position: absolute;
+                    background-color: $darkgrey;
+                    height: 1.5vmax;
+                    width: 1.5vmax;
+                    top: 50%;
+                    left: .25vmax;
+                    transform: translateY(-50%);
+                    border-radius: 50%;
+                }
+            }
+        }
+        .plan_label {
+            position: absolute;
+            left: -7vmax;
+            top: 3vmax;
+            font-size: 1.5vmax;
+        }
+        .option_box {
+            margin: 1vmax;
+            width: 25vmax;
+            .option_name {
+                padding: 1vmax;
+                background-color: $accent;
+                color: $white;
+                font-size: 2.25vmax;
+                text-align: center;
+            }
+            .price {
+                width: 100%;
+                text-align: center;
+                font-size: 2.25vmax;
+                padding: 1vmax 0 2.5vmax;
+            }
+            .option_body {
+                border: .1vmax solid $black;
+                padding: 1vmax;
+                height: 29vmax;
+                .info_label,
+                .info {
+                    flex: 1;
+                    font-size: 1.5vmax;
+                    padding: 0 2vmax 3vmax;
+                }
+                .info_label {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+// !PRICING
