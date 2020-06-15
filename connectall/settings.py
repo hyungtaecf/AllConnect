@@ -26,7 +26,7 @@ SECRET_KEY = 'r-6=u2=0qxwd^_1w46715arbfyw5d**d)-=aj989zm@z@p&!!u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','allconnect.io', 'kgen.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','allconnect.io','www.allconnect.io','kgen.pythonanywhere.com']
 
 
 # Application definition
