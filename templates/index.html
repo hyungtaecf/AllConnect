@@ -4,23 +4,24 @@
 {% block content %}
         <!-- Upper section -->
         <section id="upper">
-            <img class="cover" src='{% static "img/cover.png" %}' alt="">
+            <img class="cover d-none d-lg-block" src='{% static "img/cover.png" %}' alt="">
+            <img class="cover d-lg-none" src='{% static "img/mobile_cover.png" %}' alt="">
             <div class="upper_items">
-                <div class="d-flex flex-row py-5">
+                <div class="upper_item py-5">
                     <img src='{% static "img/upper_image_1.png" %}' alt="">
                     <div class="item_info">
                         <div class="item_title">プログラミング不要</div>
                         <div class="item_description">AllConnectの利用にプログラミングは必要ありません。直感的なインターフェースで、誰でも簡単にアプリ間連携を利用できます。</div>
                     </div>
                 </div>
-                <div class="d-flex flex-row">
+                <div class="upper_item">
                     <img src='{% static "img/upper_image_2.png" %}' alt="">
                     <div class="item_info">
                         <div class="item_title">面倒な作業からの解放</div>
                         <div class="item_description">メンバーをデータ移し替え作業から解放し、より価値のある時間を過ごしましょう。</div>
                     </div>
                 </div>
-                <div class="d-flex flex-row">
+                <div class="upper_item">
                     <img src='{% static "img/upper_image_3.png" %}' alt="">
                     <div class="item_info">
                         <div class="item_title">データを最大限に活用</div>
@@ -44,7 +45,7 @@
 
                 <img class="cover" src='{% static "img/lower_image_1.png" %}' alt="">
             </div>
-            <div class="lower_container d-flex flex-row">
+            <div class="lower_container">
                 <img src="{% static 'img/lower_image_2.png' %}" alt="">
                 <div class="lower_message d-flex flex-column justify-content-center">
                     <p>必要なものすべて</p>
@@ -52,7 +53,7 @@
                     <p>※価格は変更になる可能性がございます。</p>
                 </div>
             </div>
-            <div class="d-flex flex-column align-items-center">
+            <div class="message d-flex flex-column align-items-center">
                 <a href="https://meetings.hubspot.com/info5968" class="button">オンライン説明会を予約</a>
                 <div class="message_title">事前登録で利用料金50％OFF</div>
                 <div class="message_description">下のフォームに事前登録をしていただくと、1年間AllConnectを50％OFFでご利用いただけます。</div>
